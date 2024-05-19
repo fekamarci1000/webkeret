@@ -1,0 +1,9 @@
+<div>
+  <input type="text" placeholder="Filter tiles..." (input)="filterTiles($event)">
+</div>
+<div *ngFor="let tile of filteredTiles">
+  <h2>{{ tile.name }}</h2>
+  <p>{{ tile.description }}</p>
+  <p>{{ tile.price }}</p>
+  <button (click)="addToCart(tile)">Add to Cart</button>
+</div>

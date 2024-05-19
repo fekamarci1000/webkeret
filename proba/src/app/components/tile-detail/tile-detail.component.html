@@ -1,0 +1,6 @@
+<div *ngIf="tile">
+  <h1>{{ tile.name }}</h1>
+  <p>{{ tile.description }}</p>
+  <p>{{ tile.price }}</p>
+  <button (click)="addToCart(tile)">Add to Cart</button>
+</div>
